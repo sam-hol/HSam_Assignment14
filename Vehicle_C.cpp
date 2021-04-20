@@ -10,6 +10,16 @@ Vehicle_C::Vehicle_C(string man, int year) {
 	yearBuilt = year;
 }
 
+Vehicle_C::Vehicle_C(string man) {
+	manufacturer = man;
+	yearBuilt = 0;
+}
+
+Vehicle_C::Vehicle_C(int year) {
+	manufacturer = "";
+	yearBuilt = year;
+}
+
 string Vehicle_C::Get_Make() const {
 	return manufacturer;
 }

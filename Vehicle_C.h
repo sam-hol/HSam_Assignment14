@@ -14,8 +14,10 @@ private:
 	int yearBuilt;
 
 public:
-	Vehicle_C();
-	Vehicle_C(string, int);
+	Vehicle_C(); //default constructor
+	Vehicle_C(string, int); //constructor accepting arguments for both manufacturer and yearBuilt
+	Vehicle_C(string); //constructor accepting argument for manufacturer
+	Vehicle_C(int); //constructor accepting argument for yearBuilt
 
 	string Get_Make() const;
 	int Get_Built() const;
@@ -23,7 +25,7 @@ public:
 	void Set_Make(string);
 	void Set_Built(int);
 
-	virtual void Display_Info() const;
+	virtual void Display_Info() const; //prints manufacturer and yearBuilt to console
 };
 
 #endif

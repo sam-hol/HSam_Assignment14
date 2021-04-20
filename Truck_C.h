@@ -10,14 +10,14 @@ private:
     double towCapacity;
 
 public:
-    Truck_C();
-    Truck_C(double);
-    Truck_C(double, string, int);
+    Truck_C(); //default constructor
+    Truck_C(double); //constructor accepting towCapacity, default vehicle constructor
+    Truck_C(double, string, int); //constructor accepting arguments for all parameters
 
-    double Get_Towing() const;
-    void Set_Towing(double);
+    double Get_Towing() const; //returns towCapacity
+    void Set_Towing(double); //sets towCapacity
 
-    virtual void Display_Info() const;
+    virtual void Display_Info() const; //redefinition of Display_Info including towCapacity
 };
 
 #endif

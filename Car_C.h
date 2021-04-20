@@ -10,14 +10,14 @@ private:
     int doorCount;
 
 public:
-    Car_C();
-    Car_C(int);
-    Car_C(int, string, int);
+    Car_C(); //default constructor
+    Car_C(int); //constructor accpeting doorCount, using default vehicle constructor
+    Car_C(int, string, int); //constructor accepting arguments for all parameters
 
-    int Get_Doors() const;
-    void Set_Doors(int);
+    int Get_Doors() const; //returns doorCount
+    void Set_Doors(int); //sets doorCount
 
-    virtual void Display_Info() const;
+    virtual void Display_Info() const; //redefinition of Display_Info including doorCount
 };
 
 #endif
